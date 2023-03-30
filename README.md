@@ -90,3 +90,11 @@ Shift Or algoritması, her bir adımın zaman karmaşıklığına sahiptir.
 Bu nedenle, Shift Or algoritmasının toplam zaman karmaşıklığı, O(n log n) + O(n) + O(n) + O(1) + O(n^2) = O(n^2) olarak ifade edilir.
 
 En iyi durumda, Shift Or algoritması, verilen sınır değeri için tam olarak doğru alt kümeleri oluşturur ve bu durumda doğru sonuç verir. En kötü durumda, algoritma her öğe için ayrı bir alt küme oluşturur ve toplamda n^2 adet alt küme oluşturarak en kötü performansı gösterir. Ortalama olarak, Shift Or algoritması verilen sınır değerini aşmayacak şekilde yaklaşık olarak optimum alt kümeleri oluşturur.
+
+Shift Or algoritması sınırı, verilen bir veri kümesi ve bir sınır değeri için en fazla kaç alt küme oluşturulabileceğini ifade eder. Bu sınır, veri kümesinin boyutu, sınır değeri ve önbellek (cache) boyutuna bağlıdır.
+
+Öncelikle, veri kümesinin sıralanması, en küçük öğeden en büyüğüne doğru bir sıralama olduğu için, alt kümeler de en küçük öğeden başlayarak birleştirileceklerdir. Bu nedenle, herhangi bir alt küme, bir sonraki öğe eklenmeden önce en azından sınır değerine ulaşmış olacaktır. Ayrıca, önbellek (cache) boyutu, herhangi bir alt küme için en fazla bir öğe saklayabilecek kadar küçük olabilir.
+
+Dolayısıyla, verilen bir veri kümesi ve sınır değeri için en fazla alt küme sayısı, veri kümesindeki öğe sayısı (n) ve önbellek (cache) boyutu (k) kullanılarak hesaplanabilir. Her alt küme en azından sınır değerine ulaşmalıdır, bu nedenle en fazla n/k alt küme oluşturulabilir. Ayrıca, önbellek (cache) boyutu en fazla 1 olabilir, bu durumda her bir öğe ayrı bir alt küme olarak ele alınır ve en fazla n alt küme oluşturulabilir.
+
+Bu nedenle, Shift Or algoritması sınırı, en fazla n/k veya n olabilir, veri kümesinin boyutuna ve önbellek (cache) boyutuna bağlı olarak değişir.
