@@ -5,10 +5,15 @@ Christofides algoritması, mesafelerin metrik bir uzay oluşturduğu durumlarda 
 Algoritma şu şekilde çalışır: G = (V,w) gezgin satıcı probleminin bir örneği olsun. G, V köşe kümesi üzerinde tam bir grafiktir ve w fonksiyonu G’nin her kenarına pozitif bir gerçek ağırlık atar. Üçgen eşitsizliğine göre, her üç köşe u, v ve x için w(uv) + w(vx) ≥ w(ux) olmalıdır. Daha sonra algoritma şu şekilde açıklanabilir:
 
 1.G’nin minimum kapsayan ağacını T olarak oluşturun.
+
 2.T’de tek dereceli köşelerin kümesini O olarak belirleyin.
+
 3.O’nun indüklenmiş alt grafiğinde minimum ağırlıklı mükemmel eşleştirme M’yi bulun.
+
 4.M ve T’nin kenarlarını birleştirerek her köşenin çift dereceli olduğu bağlı bir çoklu grafik H oluşturun.
+
 5.H’de Eulerian devresi oluşturun.
+
 6.Önceki adımda bulunan devreyi tekrarlanan köşeleri atlayarak (kısayol) Hamilton devresine dönüştürün.
 
 Bu adımların 5 ve 6’sı mutlaka tek bir sonuç vermeyebilir. Bu nedenle sezgisel olarak farklı yollar verebilir.
