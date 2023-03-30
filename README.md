@@ -19,17 +19,25 @@ Christofides algoritması, verilen bir tam ağırlıklı graf için yaklaşık o
 Algoritma, şu adımlardan oluşur:
 
 1.Grafın minimum ağırlıklı çiftlerini bulun.
+
 2.Bulunan minimum ağırlıklı çiftlerin oluşturduğu çiftleştirilmiş grafın minimum ağırlıklı tam eşleştirmesini bulun.
+
 3.Oluşan minimum ağırlıklı tam eşleştirmeyi çiftleştirilmiş grafa ekleyin ve böylece Euler grafi oluşacaktır.
+
 4.Euler grafi üzerinde Euler turu oluşturun.
+
 5.Euler turunu Hamilton döngüsüne dönüştürmek için, Euler turu üzerinde herhangi bir tekrar eden düğümü kaldırın.
 
 Christofides algoritması, her bir adımın zaman karmaşıklığına sahiptir.
 
 1.Adım: Grafın minimum ağırlıklı çiftlerini bulma, bir çiftli graf oluşturma ve minimum ağırlıklı tam eşleştirme bulma adımları için, verilen grafın boyutuna bağlı olarak O(n^3) zaman karmaşıklığına sahiptir.
+
 2.Adım: Minimum ağırlıklı tam eşleştirme adımı, grafin boyutuna bağlı olarak O(n^3) zaman karmaşıklığına sahiptir.
+
 3.Adım: Euler grafi oluşturma adımı için, O(n^2) zaman karmaşıklığına sahiptir.
+
 4.Adım: Euler turu oluşturma adımı için, O(n) zaman karmaşıklığına sahiptir.
+
 5.Adım: Euler turunu Hamilton döngüsüne dönüştürme adımı, O(n) zaman karmaşıklığına sahiptir.
 
 Bu nedenle, Christofides algoritmasının toplam zaman karmaşıklığı, O(n^3) + O(n^3) + O(n^2) + O(n) + O(n) = O(n^3) olarak ifade edilir.
