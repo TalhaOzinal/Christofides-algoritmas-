@@ -1,4 +1,4 @@
-# Christofides-algoritmas-
+# Christofides-algoritmas- Mesafe ölçüm algoritması
 
 Christofides algoritması, mesafelerin metrik bir uzay oluşturduğu durumlarda (simetrik ve üçgen eşitsizliğine uyan) gezgin satıcı problemine yaklaşık çözümler bulmak için kullanılan bir algoritmadır. Bu algoritma, çözümlerinin optimal çözüm uzunluğunun 3/2’si içinde olacağını garanti eden bir yaklaşım algoritmasıdır.
 
